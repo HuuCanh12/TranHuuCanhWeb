@@ -1,0 +1,209 @@
+:root {
+  --primary-color: #ff3c41;
+  --secondary-color: #00bcd4;
+  --dark-color: #222;
+  --light-color: #f8f9fa;
+  --text-color: #666;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.navbar {
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.05);
+}
+
+
+.brand-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  line-height: 1;
+}
+
+.brand-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin-top: 0.2rem;
+}
+
+.nav-link {
+  color: var(--dark-color) !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem !important;
+  margin: 0 0.3rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.nav-item.active .nav-link {
+  background-color: var(--primary-color);
+  color: white !important;
+  border-radius: 4px;
+}
+
+.nav-item:first-child .nav-link {
+  background-color: var(--primary-color);
+  color: white !important;
+  border-radius: 4px;
+} 
+
+.carousel {
+  margin-top: 76px;
+}
+
+.carousel-inner img {
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+.carousel-indicators button.active {
+  background-color: white;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0.7;
+}
+
+.about-section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 2rem;
+}
+
+.about-section h3 {
+  font-size: 1.8rem;
+  color: var(--dark-color);
+}
+
+.about-section img {
+  transition: transform 0.3s ease;
+}
+
+.about-section img:hover {
+  transform: scale(1.02);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.8rem 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e62e33;
+  transform: translateY(-2px);
+}
+
+.services-section {
+  background-color: var(--light-color);
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.service-icon {
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.service-card h4 {
+  color: var(--dark-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+      padding: 0.5rem 0;
+  }
+
+  .carousel {
+      margin-top: 66px;
+  }
+
+  .carousel-inner img {
+      height: 400px;
+  }
+
+  .about-section {
+      padding: 3rem 0;
+  }
+
+  .section-title {
+      font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-inner img {
+      height: 300px;
+  }
+
+  .brand-title {
+      font-size: 1.5rem;
+  }
+
+  .about-section h3 {
+      font-size: 1.5rem;
+  }
+
+  .service-card {
+      margin-bottom: 1.5rem;
+  }
+} 
